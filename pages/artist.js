@@ -6,6 +6,11 @@ import ArtistSection from '../components/ArtistSection'
 
 const Container = styled.div``
 
+const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 export default function Home() {
   return (
     <Container>
@@ -15,7 +20,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Benvenuto su Stagebook!</h1>
+      <HeaderContainer>
+        <h1>Benvenuto su Stagebook!</h1>
+        <Image src="/fulmine.png" alt="Stagebook Logo" width={50} height={50} />
+      </HeaderContainer>
 
       <h2>I tuoi contenuti</h2>
       <ArtistSection title="Foto" />
