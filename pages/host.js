@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
-import ArtistSection from '../components/ArtistSection'
 
 const Container = styled.div``
 
@@ -15,13 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>Benvenuto su Stagebook!</h1>
-
-      <h2>I tuoi contenuti</h2>
-      <ArtistSection title="Foto" />
-      <ArtistSection title="Video" />
-      <ArtistSection title="Bio" />
-      <ArtistSection title="Cachet" />
+      <h1>Host</h1>
 
       <footer className={styles.footer}>
         Protetto da copyright
